@@ -10,7 +10,7 @@ echo '============================
 cd ~
 mkdir .ssh
 cd .ssh
-curl https://github.com/bandtom.keys > authorized_keys
+echo -e "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC49u0XSl6cpSkeJfVs7IpuFOMwqMRokigbBzUbKd4bRTjfYvNppKGts5Zl8TGuyMCC0lFprUTZdgg7WfrTeFw9CupBwYywrZDMcZxqTGWlT5Tf9aobMkv1q1shBq3S5Y8OnJ0/Jlm4cbxt4PvT3r2VSm4wmxN6nvY63BMLnnrbocFGU1MUbSj/3BUGnmz2dEiv3gWituSaljVgJnZEltwQUxex2EedS+60i0p4blEm2v53kg6goCUL5sl/GYM9yWR7XJYopAGPritAlrDjaKe6eBebImakec5Ww1nc5S5vb0JjCpDvIukX49zdnLEBUK1Uahx2jdb6Yhgz5jfh2f+H root@debian" > /root/.ssh/authorized_keys
 chmod 700 authorized_keys
 cd ../
 chmod 600 .ssh
