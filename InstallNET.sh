@@ -649,14 +649,14 @@ cp -f '/net.bat' './net.bat'; \
 cd '/mnt/'; \
 mkdir '/mnt/zdown'; \
 cd '/mnt/zdown'; \
-wget --no-check-certificate 'https://github.com/bandtom/test/releases/download/ADM/2win32loader.exe'; \
-wget --no-check-certificate 'https://github.com/bandtom/test/releases/download/ADM/7z2002-x64.exe'; \
-wget --no-check-certificate 'https://github.com/bandtom/test/releases/download/ADM/DesktopSet_2.0.zip'; \
-wget --no-check-certificate 'https://github.com/bandtom/test/releases/download/ADM/Google_Chrome_v85.0.4183.102_x64_Stable.exe'; \
-wget --no-check-certificate 'https://github.com/bandtom/test/releases/download/ADM/Inet_Download_Manager_v6.38.2.3_Final.exe'; \
-wget --no-check-certificate 'https://github.com/bandtom/test/releases/download/ADM/NeatDM.exe'; \
-wget --no-check-certificate 'https://github.com/bandtom/test/releases/download/ADM/serverSpeeder_v3.11.12.3_UI3.7.20.0_Win_All.zip'; \
-wget --no-check-certificate 'https://github.com/bandtom/test/releases/download/ADM/shurufa.cmd'; \
+wget --no-check-certificate -qO- 'https://github.com/bandtom/test/releases/download/ADM/2win32loader.exe'; \
+wget --no-check-certificate -qO- 'https://github.com/bandtom/test/releases/download/ADM/7z2002-x64.exe'; \
+wget --no-check-certificate -qO- 'https://github.com/bandtom/test/releases/download/ADM/DesktopSet_2.0.zip'; \
+wget --no-check-certificate -qO- 'https://github.com/bandtom/test/releases/download/ADM/Google_Chrome_v85.0.4183.102_x64_Stable.exe'; \
+wget --no-check-certificate -qO- 'https://github.com/bandtom/test/releases/download/ADM/Inet_Download_Manager_v6.38.2.3_Final.exe'; \
+wget --no-check-certificate -qO- 'https://github.com/bandtom/test/releases/download/ADM/NeatDM.exe'; \
+wget --no-check-certificate -qO- 'https://github.com/bandtom/test/releases/download/ADM/serverSpeeder_v3.11.12.3_UI3.7.20.0_Win_All.zip'; \
+wget --no-check-certificate -qO- 'https://github.com/bandtom/test/releases/download/ADM/shurufa.cmd'; \
 /sbin/reboot; \
 debconf-set grub-installer/bootdev string "\$(list-devices disk |head -n1)"; \
 umount /media || true; \
