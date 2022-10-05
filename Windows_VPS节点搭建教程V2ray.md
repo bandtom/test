@@ -13,9 +13,9 @@
 搭建的原理都在系列教程讲解过了，不管是windows还是linux，原理都是相通的，所以本教程只注重操作步骤，想要了解原理请看我录制的[系列教程](https://bulianglin.com/g/aHR0cHM6Ly95b3V0dWJlLmNvbS9wbGF5bGlzdD9saXN0PVBMNVRiYnRleFQ4VDNkXzdVWDJhU0Zob01Zay1jbDRrZjQ)。
 
 ## 相关链接
-v2ray内核：[https://github.com/v2fly/v2ray-core/releases/latest](https://github.com/v2fly/v2ray-core/releases/latest)
-nginx：[https://nginx.org/en/download.html](https://nginx.org/en/download.html)
-win-acme：[https://www.win-acme.com](https://www.win-acme.com)
+v2ray内核：[https://github.com/v2fly/v2ray-core/releases/latest](https://github.com/v2fly/v2ray-core/releases/latest)  
+nginx：[https://nginx.org/en/download.html](https://nginx.org/en/download.html)  
+win-acme：[https://www.win-acme.com](https://www.win-acme.com)  
 
 ## windows VPS配置
 
