@@ -31,7 +31,7 @@ win-acme申请证书的步骤
 4. 选择2手动输入
 5. 输入域名后**回车**，确认域名**再次回车**
 6. 选择认证方式1，on (network) path
-7. 输入c:\nginx\html目录
+7. 输入网站根目录，例如c:\nginx\html目录
 8. 输出配置文件选择n
 9. 密钥类型选择1Elli \*\*  key
 10. 选择2(nginx,apache使用的)
