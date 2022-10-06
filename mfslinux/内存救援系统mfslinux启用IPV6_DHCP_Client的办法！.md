@@ -98,3 +98,4 @@ packages/nano_6.2-2_x86_64.ipk
 packages/nano_6.3-1_x86_64.ipk
 ```
 
+![pack](https://github.com/bandtom/test/raw/master/mfslinux/img/pack.png)
