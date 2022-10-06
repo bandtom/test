@@ -1,15 +1,15 @@
 # Windows/Linux 从 iso 启动 mfslinux 然后 DD 新系统
 
-========================================================================
-[Windows](https://369369.xyz/host/data/Windows.html) 系统
-========================================================================
+\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=  
+[Windows]系统  
+\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=  
 
-\1. 下载 [EasyBCD](https://369369.xyz/host/data/EasyBCD.html) 和 mfslinux
+\1. 下载 [EasyBCD]和 mfslinux
 
-https://sm.myapp.com/original/System/[EasyBCD](https://369369.xyz/host/data/EasyBCD.html)_v2.3.exe
-https://mfsbsd.vx.sk/files/iso/mfslinux/mfslinux-0.1.10-f9c75a4.iso
+https://sm.myapp.com/original/System/EasyBCD_v2.3.exe  
+https://mfsbsd.vx.sk/files/iso/mfslinux/mfslinux-0.1.10-f9c75a4.iso  
 
-\2. 安装 [EasyBCD](https://369369.xyz/host/data/EasyBCD.html) 添加 mfslinux 启动菜单并设置为默认选项
+\2. 安装 [EasyBCD]添加 mfslinux 启动菜单并设置为默认选项
 
 ![img](https://s2.loli.net/2022/10/06/1qZXRCcLTB2xEUl.png)
 
@@ -29,12 +29,12 @@ https://mfsbsd.vx.sk/files/iso/mfslinux/mfslinux-0.1.10-f9c75a4.iso
 
 \4. 通过 SSH 连接
 
-username: root
-password: mfsroot
+username: root  
+password: mfsroot  
 
-========================================================================
-Linux 系统
-========================================================================
+\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=  
+Linux 系统  
+\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=  
 \1. 控制面板安装 [Debian](https://369369.xyz/host/data/Debian.html) 11
 
 \2. 下载、安装、启动 mfslinux
@@ -52,12 +52,12 @@ reboot
 
 \3. SSH 连接
 
-username: root
-password: mfsroot
+username: root  
+password: mfsroot  
 
-========================================================================
-DD Windows
-========================================================================
+\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=  
+DD Windows  
+\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=  
 
 安装进度条 -- 可选
 
@@ -83,14 +83,13 @@ wget -O- "https://dl.lamp.sh/vhd/zh-cn_win2022.xz" | xzcat | pv | dd of=/dev/vda
 重启
 reboot
 
-RDP 连接
-username: Administrator
-password: Teddysun.com
+RDP 连接  
+username: Administrator  
+password: Teddysun.com  
 
-========================================================================
-
-DD [Debian]
-========================================================================
+\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=  
+DD [Debian]  
+\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=\=  
 安装进度条 -- 可选
 
 ```
@@ -143,6 +142,6 @@ passwd root
 重启
 reboot
 
-SSH 连接
-username: root
+SSH 连接  
+username: root  
 password: ********
