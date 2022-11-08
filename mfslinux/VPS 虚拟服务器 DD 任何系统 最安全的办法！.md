@@ -38,7 +38,7 @@ update-grub2
 reboot
 ```
 默认用户“root”  
-默认密码“mfslinux”  
+默认密码“mfslinux”或者"mfsroot"  
 默认端口“22”  
 
 3进入内存救援系统之后安装必备的软件包
