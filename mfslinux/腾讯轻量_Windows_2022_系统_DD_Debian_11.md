@@ -174,6 +174,32 @@ sudo cat /etc/shadow | grep root
 root:$y$j9T$T76Q00rHl.AWo4XebXcPB/$wBLwqUl5XhvjUAGQFx/NLhcz5zHrVEU0oTr9uIZEJM3:19106:0:99999:7:::
 ```
 
-
 然后就可以顺利的使用新密码登录了。
 
+------
+
+使用 nocloud 映像可以直接登录了，并且也没有 /usr/local/qcloud 文件夹
+```
+https://cloud.debian.org/images/cloud/bullseye/latest/debian-11-nocloud-amd64.raw
+```
+控制面板看不到cpu和内存数据
+
+```
+wget -O- "https://cloud.debian.org/images/cloud/bullseye/latest/debian-11-nocloud-amd64.raw" | dd of=/dev/vda
+
+fdisk /dev/vda << EOF
+w
+q
+EOF
+
+mkdir /mnt/vda1 && mount /dev/vda1 /mnt/vda1 && chroot /mnt/vda1
+
+ssh-keygen -A && \
+sed -i 's/.*PermitRootLogin.*/PermitRootLogin yes/' /etc/ssh/sshd_config && \
+sed -i 's/.*PasswordAuthentication.*/PasswordAuthentication yes/' /etc/ssh/sshd_config && \
+passwd root
+********
+********
+
+reboot
+```
