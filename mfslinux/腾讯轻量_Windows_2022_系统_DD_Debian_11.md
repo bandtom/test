@@ -178,7 +178,7 @@ root:$y$j9T$T76Q00rHl.AWo4XebXcPB/$wBLwqUl5XhvjUAGQFx/NLhcz5zHrVEU0oTr9uIZEJM3:1
 
 ------
 
-使用 nocloud 映像可以直接登录了，并且也没有 /usr/local/qcloud 文件夹
+## 使用 nocloud 映像可以直接登录了，并且也没有 /usr/local/qcloud 文件夹
 ```
 https://cloud.debian.org/images/cloud/bullseye/latest/debian-11-nocloud-amd64.raw
 ```
