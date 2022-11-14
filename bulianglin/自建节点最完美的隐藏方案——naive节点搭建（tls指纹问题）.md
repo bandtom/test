@@ -23,7 +23,19 @@ go install github.com/caddyserver/xcaddy/cmd/xcaddy@latest
 ```
 
 如果第二条指令执行出错，可以尝试执行`go env -w GO111MODULE=on` 再重试，还不行的话请自行搜索升级go版本方法
+```
+运行第二条指令出错的，这个是解决方法。
+ubantu下使用sudo apt install golang-go指令安装go环境，安装过程没有报错，在使用时无法识别指令。
+原因：未完整安装go环境，使用apt安装的版本可能会比较老。
+解决：
+apt-get install software-properties-common
 
+sudo add-apt-repository ppa:longsleep/golang-backports 
+sudo apt-get update 
+sudo apt-get install golang-go
+测试：
+go version
+```
 ### Caddyfile配置：
 
 ```
