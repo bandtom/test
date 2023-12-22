@@ -1,1 +1,1 @@
-wget --no-check-certificate -qO- "http://dd.fzz7.com/nat.ee/guajibao-win10-ent-ltsc-2019-x64-cn/guajibao-win10-ent-ltsc-2019-x64-cn.vhd.gz" |gunzip -dc |dd of=/dev/vda
+wget --no-check-certificate -qO- "http://dd.fzz7.com/nat.ee/guajibao-win10-ent-ltsc-2019-x64-cn/guajibao-win10-ent-ltsc-2019-x64-cn.vhd.gz" |gunzip -dc |dd of=/dev/vda1
