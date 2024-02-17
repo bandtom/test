@@ -288,9 +288,9 @@ install_v2(){
     else
         if [ ! -f $v2_file ];then
             v2_url=$(wget -qO- https://api.github.com/repos/shadowsocks/v2ray-plugin/releases/latest | grep linux-amd64 | grep browser_download_url | cut -f4 -d\")
-            wget $v2_url
+            wget https://github.com/shadowsocks/v2ray-plugin/releases/download/v1.3.2/v2ray-plugin-linux-amd64-v1.3.2.tar.gz
         fi
-        tar xf $v2_file
+        tar xf v2ray-plugin-linux-amd64-v1.3.2.tar.gz
         mv v2ray-plugin_linux_amd64 /usr/local/bin/v2ray-plugin
 		colorEcho $BLUE " v2ray_plugin安装成功!"
         if [ ! -f /usr/local/bin/v2ray-plugin ];then
